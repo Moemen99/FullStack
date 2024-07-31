@@ -1,0 +1,26 @@
+<div class="container mt-4">
+    <h2>Goods List</h2>
+    <div class="card mb-3">
+      <div class="card-header bg-dark text-white">
+        Available Goods
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th>Good ID</th>
+                <th>Initial Balance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let good of goodsList">
+                <td><span class="badge bg-primary">{{ good.goodID }}</span></td>
+                <td>{{ good.goodInitialBalance }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "7ea212b3-bd32-477f-8933-9f79c133c87f",
+		"name": "Store.APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29366115"
+	},
+	"item": [
+		{
+			"name": "Get Goods, Transactions and Store",
+			"item": [
+				{
+					"name": "Get All Goods",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Good By Id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Goods/id?id=5401",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Goods",
+								"id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5401"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Stores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Goods/Stores",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Goods",
+								"Stores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Transactions",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "FilterByGoodIdAndPeriod",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Goods?GoodId=5402&TransactionStartDate=2014-1-1&TransactionEndDate=2014-1-2",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Goods"
+							],
+							"query": [
+								{
+									"key": "GoodId",
+									"value": "5402"
+								},
+								{
+									"key": "TransactionStartDate",
+									"value": "2014-1-1"
+								},
+								{
+									"key": "TransactionEndDate",
+									"value": "2014-1-2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://localhost:7097",
+			"type": "string"
+		}
+	]
+}

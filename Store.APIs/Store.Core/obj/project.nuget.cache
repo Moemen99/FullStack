@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CDiMsBRFezgpSWxbD8lQ4PJyEjdpSf87D05mnV0ntDDJXf/feTw63cxLvwrcbgDmOkFd/M/jwBYDb0boxEn7Ng==",
+  "success": true,
+  "projectFilePath": "E:\\.NetProjects\\FullStack\\Store.APIs-master\\Store.Core\\Store.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mano_\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
